@@ -1,0 +1,22 @@
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.header {
+    background-color: cadetblue;
+}
+
+.headertext {
+  color: black;
+}
+
+.blogbox {
+  background-color: red;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
