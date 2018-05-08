@@ -1,9 +1,13 @@
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+.uppercase {
+  text-transform: capitalize;
 }
 
 .header {
@@ -14,9 +18,69 @@ h3 {
   color: black;
 }
 
-.blogbox {
+.blogboxculture {
   background-color: red;
   border-radius: 50%;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center
+}
+
+.blogboxtechnical {
+  background-color: yellow;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center
+}
+
+@media (min-width: 400px) {
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.uppercase {
+  text-transform: capitalize;
+}
+
+.header {
+    background-color: cadetblue;
+}
+
+.headertext {
+  color: black;
+}
+
+.blogboxculture {
+  background-color: red;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center
+}
+
+.blogboxtechnical {
+  background-color: yellow;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center
+}
+
 }
