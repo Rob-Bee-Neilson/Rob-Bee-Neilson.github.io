@@ -1,83 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link href="../styles/main.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-        <title>T2-html-css-dom-p2</title>
-        <meta charset="UTF-8">
-    </head>
-      
-    
-    <body>
-        <h1>T2 HTML, CSS, and the DOM p2</h1>
-        <h3>Sprint 2</h3>
-        <h3>02/05/18<br><br></h3>
-    
-        <div>
-            <h2><span class="inverttext">What is grid based design?</span></h2>
-            <p>Grid based design is essentially dividing up the webpage we are working on into a grid pattern, utilising rows and columns to place elements.<br>
-                This has an immediate advantage in our design process as it relieves us from plotting elements with numerous, complicated xy coordinates. It also helps content stay aligned within a responsive webpage across browsers and devices.<br>
-                There are numerous ways of implementing grid based design but a straight forward approach would be to define the width of our webpage, designate rows within the page breaking things down into broad boxes, then create (x) number of columns on the page to further break down the content and elements into boxes.<br>
-                Pages are often divided into 12 columns as 12 can be divided by 2, 3, and 4. This can be represented by a fixed pixel count or as a percentage of the total page width, using 25%, 33.3%, 50% and 100% values.<br>
-                This allows for a convienent number of combinations/iterations in our structure.<br>
-                Each column corrosponds to a class that can be applied to HTML elements.
-            </p>
-        </div>
-        <div>
-            <h2><span class="inverttext">Whats all the hype about responsive webpages?</span></h2>
-            <p>Responsive webpage can resize/realign to accomodate different browsers across different devices/resolutions, keeping a pleasant structure/presentation no matter how it is viewed.<br>
-                This is important because over the last 5-10 years the increase in tablet+smart phone usage has increased dramatically, increasingly more people are using these devices than the more traditional desktops and laptops. With so many different ways of displaying your webpage having a responsive website is amazing.
-            </p>
-        </div>
-        <div>
-            <h2><span class="inverttext">What is semantic structure?</span></h2>
-            <p>In general, semantic structure can be called 'organization that represents meaning'. In language this is important, semantic rules make communication possible. They are rules that people have agreed on to give meaning to certain symbols and words. Misunderstandings happen when people give different meanings to the same words or phrases, or structure their sentences in different ways. Someone should have taught Yoda this sometime in his 900 odd years.<br>
-                In programming languages and coding having correct semantic structure allows things to be computational, it makes it work. I'm sure everyone who has touched code must have come across some issue that arose from even the slightest incorrect symbol in the wrong place.
-            </p>
-        </div>
-        <div>
-            <h2><span class="inverttext">Any other points you found interesting and want to reflect on.</span></h2>
-            <p>I'm loving discovering all the useful tools out there, like Bootstrap, that make coding easier!
-            </p>
-        </div>
+<html>
+  <head>
+    <title>Rob's Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  </head>
 
-        <div><img src="../images/redpill.png" alt=red height="75" class="center">
-        </div>
+  <body>
+    <div class="container">
 
-        <!--Why can't I get the text black in the sidebar without using 'inverttext' class on each bit of text?-->
-        <aside class="sidebar">
-            <div class="wrapper">
-                <h2 class="inverttext">NAVIGATION:</h2>
-                <div>
-                    <h3 class="inverttext"><a href="../index.html" style="color:black">HOME</a></h3>
-                </div>
-
-                <div>
-                    <h3 class="inverttext">Blogs</h3>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a class="inverttext" href="c1-reflection-blog.html">* c1 Reflection</a>
-                            </li>
-                            <li>
-                                <a class="inverttext" href="c1-time-and-habits-blog.html">* c2 Time and Habits</a>
-                            </li>
-                            <li>
-                                <a class="inverttext" href="t2-html-css-dom-p1.html">* t2 Html CSS DOM p1</a>
-                            </li>
-                            <li>
-                                <a class="inverttext" href="t2-html-css-dom-p2.html">* t2 Html CSS DOM p2</a>
-                            </li>                       
-                        </ul>
-                    </nav>
-                </div>
-                <!--<div>
-                    <h3>Projects</h3>
-                </div>-->
+        <div class="row">
+  
+            <div class="six columns">
+                <h1>Rob's Blog</h1>
             </div>
-        </aside>
-        <!-- this is a comment. -->
 
-    </body>
+            <div>
+                <h2 class="six columns">EDA 2018</h2>
+            </div>
+  
+        </div>
+
+        <div class="row header">
+  
+            <div class="four columns">
+                <h2><a href="../index.html" class="headertext">Home</a></h2>
+            </div>
+
+            <div class="four columns">
+                <h2><a href="../blogs.html" class="headertext">Blogs</a></h2>
+            </div>
+
+            <div class="four columns">
+                <h2><a href="../projects.html" class="headertext">Projects</a></h2>
+            </div>
+
+        </div>
+        
+        <div class="row">
+
+            <div class="nine columns">
+
+                <h2>T2 HTML, CSS, and the DOM p2</h2>
+                <h3>Sprint 2<br>
+                02/05/18</h3><br>
+                            
+                <p><em>What is grid based design?</em><br>
+                    Grid based design is essentially dividing up the webpage we are working on into a grid pattern, utilising rows and columns to place elements.<br>
+                    This has an immediate advantage in our design process as it relieves us from plotting elements with numerous, complicated xy coordinates. It also helps content stay aligned within a responsive webpage across browsers and devices.<br>
+                    There are numerous ways of implementing grid based design but a straight forward approach would be to define the width of our webpage, designate rows within the page breaking things down into broad boxes, then create (x) number of columns on the page to further break down the content and elements into boxes.<br>
+                    Pages are often divided into 12 columns as 12 can be divided by 2, 3, and 4. This can be represented by a fixed pixel count or as a percentage of the total page width, using 25%, 33.3%, 50% and 100% values.<br>
+                    This allows for a convienent number of combinations/iterations in our structure.<br>
+                    Each column corrosponds to a class that can be applied to HTML elements.
+                </p>
+            
+                <p><em>Whats all the hype about responsive webpages?</em><br>
+                    Responsive webpage can resize/realign to accomodate different browsers across different devices/resolutions, keeping a pleasant structure/presentation no matter how it is viewed.<br>
+                    This is important because over the last 5-10 years the increase in tablet+smart phone usage has increased dramatically, increasingly more people are using these devices than the more traditional desktops and laptops. With so many different ways of displaying your webpage having a responsive website is amazing.
+                </p>
+            
+                <p><em>What is semantic structure?</em><br>
+                    In general, semantic structure can be called 'organization that represents meaning'. In language this is important, semantic rules make communication possible. They are rules that people have agreed on to give meaning to certain symbols and words. Misunderstandings happen when people give different meanings to the same words or phrases, or structure their sentences in different ways. Someone should have taught Yoda this sometime in his 900 odd years.<br>
+                    In programming languages and coding having correct semantic structure allows things to be computational, it makes it work. I'm sure everyone who has touched code must have come across some issue that arose from even the slightest incorrect symbol in the wrong place.
+                </p>
+            
+                <p><em>Any other points you found interesting and want to reflect on.</em><br>
+                    I'm loving discovering all the useful tools out there, like Bootstrap, that make coding easier!
+                </p>
+            
+            </div>
+  
+            <div class="three columns">
+                <h3>About Me</h3>
+                <a href="../profile.html">
+                    <img src="../images/rob1.jpg" alt="Rob" height="80%" width="80%">
+                </a>
+                <p>Robbie</p>
+            </div>
+        
+        </div>
+        <hr>
+  
+        
+        <div class="row">
+        
+            <div class="twelve columns">
+                <footer>Footer</footer>
+            </div>
+        
+        </div>
     
+    </div>
+  </body>
 </html>
+            
+  

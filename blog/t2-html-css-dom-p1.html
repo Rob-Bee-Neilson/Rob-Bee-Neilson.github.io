@@ -1,89 +1,106 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <title>T2 HTML CSS DOM part1</title>
+    <title>Rob's Blog</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
   </head>
-  
+
   <body>
-    <div>
-        <h1>T2 - HTML, CSS, and DOM - Part 1</h1>
-        <h3>Sprint 2<br>
-        30/04/2018<br><br></h3>
-    </div>
-    <div>
-        <p><span class="inverttext"> Wishlist for blog: </span>
-            <li>sidebar with links</li>
-            <li>sliding sidebar that stays still relative to scrolling?</li>
-            <li>attributes for hovering on links e.g. glowing text</li>
-            <li>update background to gif. file</li>
-            <br><br>
-        </p>
-    </div>
-    <div>
-        <p><span class="inverttext">Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?</span><br>
-            I think it will take some more time to really appreciate the differences and interactions between the three but, at present, my understanding is that HTML is the content/raw information you wish to include in your website, and the CSS is the styling or how you want to present things.<br>
-            The DOM (Document Object Model) is not as clear to me but I understand there is a recognised standard (using a defined 'tree-model') that browsers use to read and then display HTML and CSS as web pages, I'm still unclear on if the DOM is the standard itself or the process of converting and displaying the HTML+CSS provided into the HTML+CSS output using said standard.<br>
-            I think it is the later which, to me, says the DOM is more of a process (more verb than noun) happening between the content+style and the standardised model (by the browser/other) to create a final output.<br>
-            I could use an art exhibition as an analogy; The paintings are the HTML, how they are framed up is the CSS, and the curation is the whole process to set these elements up and display them in the given space using the standard gallery fittings/lighting/etc.<br>
-            If the DOM is the recognised standard rather than the process then an analogy could be that the DOM is like the instructions in a box of model pieces, the html would be the pieces and any paint/stickers you apply on the pieces is the CSS.<br>
-        </p>
-    </div>
-    <div>
-        <p><span class="inverttext">What is meant by boxifying design?</span><br>
-            Boxifying design means dividing all the HTML elements of your project in boxes.<br>
-            The whole webpage is one box, every element within the webpage can be boxed up too e.g. headers, tabs, buttons, blocks of text, etc.<br>
-            There can be boxes inside other boxes and boxes overlapping. All boxed elements can be tweaked individually or can be tweaked relative to other boxes.<br>
-            This kind of design allows us to perform complex arrangements with basic content. CSS elements can be applied to certain 'boxes' of HTML in isolation or in relation to other 'boxes'.
-        </p>
-    </div>
-    <div>
-        <p><span class="inverttext">what is the box model?</span><br>
-            The box model is a useful (and common) way of interacting with our HTML elements. It includes four parts: content, padding, border and margin.<br>
-            Each of these parts relate to each and every box within our box-designed HTML. Using the box model, if we had a 'box' with text based content inside it we can alter/stylise
-            <li>the content - the text in our box</li>
-            <li>the padding - the space between our text and it's boarder</li>
-            <li>the boarder - shape ,form, and whether it is visable or not</li>
-            <li>the margin - the space between this box and another element</li>
-        </p>
-        <p>Utilising 'boxifying design' and the 'box model' enables us to create beautiful designs + styles and play with our web content in some really dynamic ways.</p>
-    </div>
-    
-    <img src="../images/redpill.png" alt=red height="75" class="center">
+    <div class="container">
 
-    <aside class="sidebar" role="complementary">
-        <div class="wrapper">
-            <h2 class="inverttext">NAVIGATION:</h2>
-            <div>
-                <h3 class="inverttext"><a href="../index.html" style="color:black">HOME</a></h3>
-            </div>
-
-            <div>
-                <h3 class="inverttext">Blogs</h3>
-                <nav role="navigation">
-                    <ul>
-                        <li>
-                            <a class="inverttext" href="c1-reflection-blog.html">* c1 Reflection</a>
-                        </li>
-                        <li>
-                            <a class="inverttext" href="c1-time-and-habits-blog.html">* c2 Time and Habits</a>
-                        </li>
-                        <li>
-                            <a class="inverttext" href="t2-html-css-dom-p1.html">* t2 Html CSS DOM p1</a>
-                        </li>
-                        <li>
-                            <a class="inverttext" href="t2-html-css-dom-p2.html">* t2 Html CSS DOM p2</a>
-                        </li>                       
-                    </ul>
-                </nav>
-            </div>
-            <!--<div>
-                <h3>Projects</h3>
-            </div>-->
-        </div>
-    </aside>
+        <div class="row">
   
+            <div class="six columns">
+                <h1>Rob's Blog</h1>
+            </div>
+
+            <div>
+                <h2 class="six columns">EDA 2018</h2>
+            </div>
+  
+        </div>
+
+        <div class="row header">
+  
+            <div class="four columns">
+                <h2><a href="../index.html" class="headertext">Home</a></h2>
+            </div>
+
+            <div class="four columns">
+                <h2><a href="../blogs.html" class="headertext">Blogs</a></h2>
+            </div>
+
+            <div class="four columns">
+                <h2><a href="../projects.html" class="headertext">Projects</a></h2>
+            </div>
+
+        </div>
+        
+        <div class="row">
+
+            <div class="nine columns">
+            
+                <h2>T2 - HTML, CSS, and DOM - Part 1</h2>
+                <h3>Sprint 2<br>
+                30/04/2018</h3><br>
+                
+                <p><em>Wishlist for blog:</em>
+                    <li>sidebar with links</li>
+                    <li>sliding sidebar that stays still relative to scrolling?</li>
+                    <li>attributes for hovering on links e.g. glowing text</li>
+                    <li>update background to gif. file</li>
+                    <br><br>
+                </p>
+                <p><em>Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?</em><br>
+                    I think it will take some more time to really appreciate the differences and interactions between the three but, at present, my understanding is that HTML is the content/raw information you wish to include in your website, and the CSS is the styling or how you want to present things.<br>
+                    The DOM (Document Object Model) is not as clear to me but I understand there is a recognised standard (using a defined 'tree-model') that browsers use to read and then display HTML and CSS as web pages, I'm still unclear on if the DOM is the standard itself or the process of converting and displaying the HTML+CSS provided into the HTML+CSS output using said standard.<br>
+                    I think it is the later which, to me, says the DOM is more of a process (more verb than noun) happening between the content+style and the standardised model (by the browser/other) to create a final output.<br>
+                    I could use an art exhibition as an analogy; The paintings are the HTML, how they are framed up is the CSS, and the curation is the whole process to set these elements up and display them in the given space using the standard gallery fittings/lighting/etc.<br>
+                    If the DOM is the recognised standard rather than the process then an analogy could be that the DOM is like the instructions in a box of model pieces, the html would be the pieces and any paint/stickers you apply on the pieces is the CSS.<br>
+                </p><br>
+                <p><em>What is meant by boxifying design?</em><br>
+                    Boxifying design means dividing all the HTML elements of your project in boxes.<br>
+                    The whole webpage is one box, every element within the webpage can be boxed up too e.g. headers, tabs, buttons, blocks of text, etc.<br>
+                    There can be boxes inside other boxes and boxes overlapping. All boxed elements can be tweaked individually or can be tweaked relative to other boxes.<br>
+                    This kind of design allows us to perform complex arrangements with basic content. CSS elements can be applied to certain 'boxes' of HTML in isolation or in relation to other 'boxes'.
+                </p><br>
+                <p><em>what is the box model?</em><br>
+                    The box model is a useful (and common) way of interacting with our HTML elements. It includes four parts: content, padding, border and margin.<br>
+                    Each of these parts relate to each and every box within our box-designed HTML. Using the box model, if we had a 'box' with text based content inside it we can alter/stylise
+                    <li>the content - the text in our box</li>
+                    <li>the padding - the space between our text and it's boarder</li>
+                    <li>the boarder - shape ,form, and whether it is visable or not</li>
+                    <li>the margin - the space between this box and another element</li>
+                </p><br>
+                <p>Utilising 'boxifying design' and the 'box model' enables us to create beautiful designs + styles and play with our web content in some really dynamic ways.</p>
+                
+            </div>
+  
+            <div class="three columns">
+                <h3>About Me</h3>
+                <a href="../profile.html">
+                    <img src="../images/rob1.jpg" alt="Rob" height="80%" width="80%">
+                </a>
+                <p>Robbie</p>
+            </div>
+        
+        </div>
+        <hr>
+  
+        
+        <div class="row">
+        
+            <div class="twelve columns">
+                <footer>Footer</footer>
+            </div>
+        
+        </div>
+    
+    </div>
   </body>
 </html>
+            
+  
