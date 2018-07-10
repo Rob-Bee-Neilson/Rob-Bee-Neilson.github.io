@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rob's Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  </head>
+
+  <body>
+    <div class="container">
+
+        <div class="row">
+  
+            <div class="six columns">
+                <h1>Rob's Blog</h1>
+            </div>
+
+            <div>
+                <h2 class="six columns">EDA 2018</h2>
+            </div>
+  
+        </div>
+
+        <div class="row header">
+  
+            <div class="four columns">
+                <h2><a href="../index.html" class="headertext">Home</a></h2>
+            </div>
+
+            <div class="four columns">
+                <h2><a href="../blogs.html" class="headertext">Blogs</a></h2>
+            </div>
+
+            <div class="four columns">
+                <h2><a href="../projects.html" class="headertext">Projects</a></h2>
+            </div>
+
+        </div>
+        
+        <div class="row">
+
+            <div class="nine columns">
+
+                <h2>T6 JavaScript Language</h2>
+                <h3>Sprint 6<br>
+                06/07/2018</h3><br>
+                <p>
+                    In the JavaScript language, describe all the use cases for each of:<br>
+                    <em>Parentheses ()</em><br>
+                        Parentheses let you:<br>
+                        Group or contain expressions or parameters - you do this to make sure what you are trying to communicate is represented in Javascript. Different values/aperators have a different order of precedence and it can be easy to miss the way the expression/parameter we build is being interpreted in JS.<br>
+                        E.g.  answer = (x + y) * 2<br>
+                        In this example you want the x and y added FIRST, not the ‘y * 2’ calculated first as would be done otherwise, so you use parentheses around the addition.<br>
+                        If you’re writing an expression and you have spaces in your elements you can chuck this expression into parentheses so it’s received as a single thing.<br>
+                        <br>
+                        Display conditions for statements and passing parameters/arguments into a function - If you have a statement within an event/function/loop you chuck it inside parentheses.<br>
+                        This translates to mean if the contents of the parentheses is true do (this), otherwise don’t do (this).<br>
+                        We use an empty parentheses set when we define a function, If a function has no parameters to set we would leave the braces empty. When we call the function we could then put something (parameters)  into the parentheses to run it through the function.<br>
+                        E.g. I could have a greetPerson (); function that says “Hello (name)” when called, when I am calling this function I could put Bob’s name into the parentheses to then greet Bob.<br>
+                        So greetPerson (‘Bob’) -> “Hello Bob”<br>
+                        <br>
+                    <em>Brackets []</em><br>
+                        We use brackets to wrap our arrays. Usually for integers and strings, you can put a lot of info into the brackets/arrays, many things. Once in an array we can access any one of those things to use as needed.<br>
+                        <br>
+                    <em>Braces {}</em><br>
+                        We use braces to wrap all the statements within a function. We also wrap nested functions and events (e.g. functions in functions, statement blocks like for {} and if {}).<br>
+                        They can also be used to define initial values in array declarations.<br>
+                        <br>
+                    <em>Single quotes '' and Double quotes ""</em><br>
+                        In Javascript it seems you can use single or double quotes (or backticks ``) for much the same purpose. In general they are all used to contain strings or text that is to be read as text rather than as Javascript. However it is crucial to always close a quote with the same type of quote you opened with. It is generally considered professional etiquette to be consistent with a single pattern in your work, if you or anyone else has used double quotes to wrap text you continue to use double quotes throughout this piece of work.<br>
+                        I have no experience or preference to date on this.<br>
+                        <br>
+                        From what I’ve read online more people prefer using single quotes in JS.for internal strings and double for external - you can then distinguish internal constants from strings that are to be displayed to the user.<br>
+                        Fyi Chrome and Firefox’s javascript engines uses double quotations and Node.js uses single.
+                    
+                            
+                </p>
+            
+            </div>
+  
+            <div class="three columns">
+                <h3>About Me</h3>
+                <a href="../profile.html">
+                    <img src="../images/rob1.jpg" alt="Rob" height="80%" width="80%">
+                </a>
+                <p>Robbie</p>
+            </div>
+        
+        </div>
+        <hr>
+  
+        
+        <div class="row">
+        
+            <div class="twelve columns">
+                <footer>Footer</footer>
+            </div>
+        
+        </div>
+    
+    </div>
+  </body>
+</html>
+            
+  
