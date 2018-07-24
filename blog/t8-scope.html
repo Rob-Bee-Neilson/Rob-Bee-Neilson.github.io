@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rob's Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  </head>
+
+  <body>
+    <div class="container">
+
+        <div class="row">
+  
+            <div class="six columns">
+                <h1>Rob's Blog</h1>
+            </div>
+
+            <div>
+                <h2 class="six columns">EDA 2018</h2>
+            </div>
+  
+        </div>
+
+        <div class="row header">
+  
+            <div class="four columns">
+                <h2><a href="../index.html" class="headertext">Home</a></h2>
+            </div>
+
+            <div class="four columns">
+                <h2><a href="../blogs.html" class="headertext">Blogs</a></h2>
+            </div>
+
+            <div class="four columns">
+                <h2><a href="../projects.html" class="headertext">Projects</a></h2>
+            </div>
+
+        </div>
+        
+        <div class="row">
+
+            <div class="nine columns">
+
+                <h2>Scope</h2>
+                <h3>Sprint 8<br>
+                24/07/2018</h3><br>
+                <p>
+                    <em>What is 'scope', and how does it work in JavaScript?</em><br>
+                    In Javascript we work a lot with variables; some things are determined/defined by how it relates to something else.<br>
+                    E.g. I want to get the value of "This" but to do that I need the input of "That".<br>
+                    There is an overall scope in our code (Global) but also, whenever we create a new function in JS, we create a new scope (local).<br>
+                    Scope determines the accessibility of variables. Things operating in the global scope are accessable to each other. Things within a local scope are accessable to the other things in that local scope, all the scopes can see/access the global scope..<br>
+                    By haveing functions within functions you create local scopes within local scopes (Nested Scope).<br>
+                    What does all this mean?<br>
+                    Say I have written some code, it has many variables within it. I have one function within my code (function A). This function contains variables and one other function (function B) with it's ow variables.<br>
+                    The Function A has local scope. It's variables can access the global scope but the global scope may not be able to access Function A's variables.<br>
+                    Function B also has a local scope. It's variables can access Function A's variables and the global variables, however Function A may not be able to access Function B's variables.<br>
+                    Each local scope can see all the local scopes that can contain it and all  scopes can see the global scope. This is called "lexical scoping".<br>
+                </p>
+            
+            </div>
+  
+            <div class="three columns">
+                <h3>About Me</h3>
+                <a href="../profile.html">
+                    <img src="../images/rob1.jpg" alt="Rob" height="80%" width="80%">
+                </a>
+                <p>Robbie</p>
+            </div>
+        
+        </div>
+        <hr>
+  
+        
+        <div class="row">
+        
+            <div class="twelve columns">
+                <footer>Footer</footer>
+            </div>
+        
+        </div>
+    
+    </div>
+  </body>
+</html>
+            
+  
